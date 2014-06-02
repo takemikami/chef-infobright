@@ -1,4 +1,4 @@
-name             'chef-infobright'
+name             'infobright'
 maintainer       'Takeshi Mikami'
 maintainer_email 'YOUR_EMAIL'
 license          'All rights reserved'
