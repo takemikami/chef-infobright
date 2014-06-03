@@ -26,8 +26,8 @@ if url != nil
   end
 
   # copy my-ib.cnf
-  file "/etc/my-ib.cnf" do
-    content IO.read("/etc/my-ib-#{node['infobright']['role']}.cnf")
+  bash "copy my-ib.cnf"
+    code "cp /etc/my-ib-#{node['infobright']['role']}.cnf /etc/my-ib.cnf"
   end
 
   # start service
