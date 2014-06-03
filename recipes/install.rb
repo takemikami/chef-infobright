@@ -26,7 +26,7 @@ if url != nil
   end
 
   # copy my-ib.cnf
-  bash "copy my-ib.cnf"
+  bash "copy my-ib.cnf" do
     code "cp /etc/my-ib-#{node['infobright']['role']}.cnf /etc/my-ib.cnf"
   end
 
